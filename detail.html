@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>财务战略与商务模式</title>
+    <link rel="stylesheet" href="./detail.css">
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.1/skins/default/aliplayer-min.css" />
+    <script type="text/javascript" charset="utf-8"
+        src="https://g.alicdn.com/de/prismplayer/2.8.1/aliplayer-min.js"></script>
+</head>
+<style>
+    /* 清除默认样式 */
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family:
+            "Microsoft YaHei",
+            "黑体",
+            "宋体", sans-serif;
+        height: 100%;
+    }
+
+    ul,
+    ol {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        border: none;
+        vertical-align: middle;
+    }
+
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        font-size: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .inline {
+        display: inline;
+    }
+
+    .inline-block {
+        display: inline-block;
+    }
+
+    .fl {
+        float: left
+    }
+
+    .fr {
+        float: right
+    }
+
+    /* 背景图 */
+    #background {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+
+    /* 视频部分 */
+    .video-wrap {
+        width: 7.5rem;
+        height: 4.22rem;
+        background-size: contain;
+    }
+
+    .prism-player .prism-info-display {
+        box-sizing: border-box;
+    }
+
+    /* 内容部分 */
+    .video_wrap {
+        width: 7.5rem;
+        height: 4.22rem;
+    }
+
+    .content {
+        margin-top: 0.7rem;
+    }
+
+    .content .title {
+        width: 6.37rem;
+        height: 0.96rem;
+        line-height: 0.96rem;
+        color: #fff;
+        font-size: 0.44rem;
+        letter-spacing: 1px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        background: url('./img/title_bg.png') no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .content .dec_wrap {
+        width: 6.5rem;
+        margin: 0.7rem auto 1rem;
+        background-color: #fff;
+        padding-top: 0.6rem;
+        padding-bottom: 1rem;
+        min-height: 3.45rem;
+    }
+
+    .content .c_title {
+        width: 3.97rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        color: #fff;
+        font-size: 0.34rem;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 0 auto;
+        background: url('./img/jj_bg.png') no-repeat;
+        background-size: 100% 100%;
+    }
+
+
+    .content .dec_wrap .dec p {
+        padding: 0.5rem 0.5rem;
+        text-align: justify;
+        color: #666;
+        font-size: 0.3rem;
+        line-height: 0.5rem;
+    }
+</style>
+
+<body>
+    <img src="./img/bg2.png" alt="" id="background">
+    <div class="all">
+        <!-- 视频播放器 -->
+        <div class="video-wrap">
+            <div class="prism-player" id="player-con"></div>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                财务战略与商务模式
+            </div>
+            <div class="dec_wrap">
+                <div class="c_title">课程简介</div>
+                <div class="dec">
+                    <p>
+                        我是打算打大大大我是打算打大大大我是打算我是打算打大大大我是打算打大大大我是打算我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大
+                        我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算我是打算打大大大我是打算打大大大我是打算我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大
+                        我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算我是打算打大大大我是打算打大大大我是打算我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大
+                        我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大我是打算打大大大
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function setRem() {
+            var deviceWidth = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + "px";
+        }
+        setRem();
+        console.log(setRem)
+        window.onresize = setRem;
+    </script>
+    <script>
+        var player = new Aliplayer({
+            "id": "player-con",
+            "source": "http://vod.nsrjlb.net/fd32b12f46134fcea899b70b1bb8ba67/7fe3fecb8bf44a4d9d386960c4043128-5a52a6749c8397c70d0f4aebd5549e89-sd.mp4",
+            "cover": "./img/cover.jpg",
+            "width": "100%",
+            "height": "100%",
+            "autoplay": true,
+            "isLive": false,
+            "rePlay": false,
+            "playsinline": true,
+            "preload": true,
+            "controlBarVisibility": "hover",
+            "useH5Prism": true
+        }, function (player) {
+            player._switchLevel = 0;
+            console.log("播放器创建了。");
+        }
+        );      
+    </script>
+</body>
+
+</html>
